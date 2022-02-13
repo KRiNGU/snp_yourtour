@@ -21,3 +21,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# sass and css map in src directory
+src/**/*.css.map
+src/**/*.sass
