@@ -1,0 +1,19 @@
+.main {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .main {
+    max-width: 958px;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .main {
+    max-width: none;
+    padding: 0 21px;
+  }
+}

@@ -4,7 +4,7 @@ import logo from '../../assets/logo.svg';
 
 const NavigationPannel = () => (
   <div className={styles.pannel}>
-    <img src={logo} alt="Логотип" />
+    <img src={logo} alt="Логотип" className={styles.logo} />
     <nav>
       <p className={styles.element}>Туры</p>
       <p className={styles.element}>Создать тур</p>
