@@ -1,3 +1,4 @@
+import classNames from 'classnames';
 import { memo } from 'react';
 import Button from '../../components/Button/Button';
 import NavigationPannel from '../../components/NavigationPannel/NavigationPannel';
@@ -7,7 +8,7 @@ const Header = () => (
   <header>
     <NavigationPannel />
     <h1 className={styles.title}>Идеальные путешествия существуют</h1>
-    <p className={styles.text}>
+    <p className={classNames('pnormal', styles.text)}>
       Идейные соображения высшего порядка, а также рамки и место обучения кадров
     </p>
     <Button

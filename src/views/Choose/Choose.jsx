@@ -10,7 +10,7 @@ import beach from '../../assets/beach.png';
 import manOnTheBridge from '../../assets/man-on-the-bridge.png';
 
 const Choose = () => (
-  <>
+  <section>
     <h2 className={styles.title}>Выбери свой тур</h2>
     <div className={styles.types}>
       <p className={classNames('pbig', styles.type)}>Популярные</p>
@@ -19,7 +19,7 @@ const Choose = () => (
       <p className={classNames('pbig', styles.type)}>Сплавы</p>{' '}
       <p className={classNames('pbig', styles.type)}>Велопрогулки</p>{' '}
     </div>
-    <div className={styles.tours}>
+    <article className={styles.tours}>
       <Tour
         name="Путешествие в горы"
         cost="от 80 000 руб"
@@ -56,8 +56,8 @@ const Choose = () => (
         bgImg={manOnTheBridge}
         classes={{ container: styles.tour }}
       />
-    </div>
-  </>
+    </article>
+  </section>
 );
 
 export default memo(Choose);

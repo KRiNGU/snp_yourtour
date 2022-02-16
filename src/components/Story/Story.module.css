@@ -1,0 +1,79 @@
+.container {
+  margin-top: clamp(20px, 4.9vw, 50px);
+  height: clamp(455px, 55.4vw, 567px);
+  position: relative;
+  overflow: hidden;
+  border-radius: clamp(20px, 4.9vw, 50px);
+  padding: clamp(30px, 5.9vw, 60px);
+  -webkit-transition: all .3s ease, z-index 1s;
+  transition: all .3s ease, z-index 1s;
+  background: -webkit-gradient(linear, right top, left top, color-stop(0.01%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.2)));
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%);
+}
+
+.container:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  z-index: 1;
+}
+
+.container:hover .button {
+  background-color: #286562;
+}
+
+.title {
+  color: #fff;
+}
+
+.text {
+  color: #fff;
+  max-width: 554px;
+}
+
+.button {
+  position: absolute;
+  bottom: clamp(30px, 5.9vw, 60px);
+  left: clamp(30px, 5.9vw, 60px);
+}
+
+.links {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: clamp(30px, 5.9vw, 60px);
+  right: clamp(30px, 5.9vw, 60px);
+}
+
+.link {
+  cursor: pointer;
+  color: #fff;
+  border-bottom: 2px solid transparent;
+}
+
+.link:not(:first-child) {
+  margin-left: 30px;
+}
+
+.link:hover {
+  border-bottom-color: #fff;
+}
+
+.bgImage {
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: clamp(455px, 55.4vw, 567px);
+  z-index: -1;
+}
+
+@media screen and (max-width: 690px) {
+  .links {
+    display: none;
+  }
+}
+/*# sourceMappingURL=Story.module.css.map */

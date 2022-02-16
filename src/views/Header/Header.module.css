@@ -1,14 +1,14 @@
 header {
   height: clamp(488px, 120vw, 831px);
-  background: top center url('../../assets/header-img.jpg');
+  background: top center url("../../assets/header-img.jpg");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-size: max(100vw, 1920px) clamp(488px, 120vw, 831px);
+  background-size: auto clamp(488px, 120vw, 831px);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .title {
@@ -30,6 +30,15 @@ header {
   margin: clamp(40px, 11vw, 50px) auto 0 auto;
   width: 118px;
   border: none;
+  background-color: #fff;
+}
+
+.button:hover {
+  background-color: #EFA501;
+}
+
+.button:active {
+  background-color: #F8E6BE;
 }
 
 @media screen and (max-width: 1024px) {

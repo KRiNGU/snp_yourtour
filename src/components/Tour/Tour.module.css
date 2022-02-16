@@ -5,14 +5,17 @@
   border-radius: 45px;
   padding: 50px;
   cursor: pointer;
-  -webkit-transition: padding 0.5s;
-  transition: padding 0.5s;
   overflow: hidden;
+  -webkit-transition: all .3s ease, z-index 1s;
+  transition: all .3s ease, z-index 1s;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), color-stop(48.44%, rgba(0, 0, 0, 0.06)), to(rgba(0, 0, 0, 0.5)));
   background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
 }
 
 .container:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  z-index: 1;
   padding: 40px;
 }
 
@@ -30,26 +33,9 @@
 }
 
 .button {
-  color: white;
-  border: none;
-  background-color: transparent;
-  padding: 7px 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 50px;
   position: absolute;
   bottom: 43px;
   left: 30px;
-  -webkit-transition: background-color 0.5s;
-  transition: background-color 0.5s;
-}
-
-.vector {
-  margin-left: 15px;
 }
 
 .backgroundImage {
@@ -61,10 +47,11 @@
   z-index: -1;
 }
 
-@media screen and (max-width: 1130px) {
+@media screen and (max-width: 1280px) {
   .container {
     width: clamp(318px, 46vw, 450px);
     height: clamp(318px, 52vw, 531px);
+    margin: 0 auto;
   }
   .backgroundImage {
     width: 450px;

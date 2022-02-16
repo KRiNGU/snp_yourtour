@@ -1,0 +1,64 @@
+.input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.input:not(:disabled):not(:checked) + .label:hover::before {
+  border-color: #b3d7ff;
+}
+
+.input:not(:disabled):active + .label::before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
+
+.input:focus + .label::before {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.input:focus:not(:checked) + .label::before {
+  border-color: #80bdff;
+}
+
+.input:checked + .label::before {
+  border-color: #0b76ef;
+  background-color: #0b76ef;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+.input:disabled + .label::before {
+  background-color: #e9ecef;
+}
+
+.label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.label::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+/*# sourceMappingURL=Radio.module.css.map */

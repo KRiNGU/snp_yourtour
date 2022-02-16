@@ -1,0 +1,37 @@
+.travelTime {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: clamp(75px, 14vw, 135px) auto;
+  max-width: 771px;
+}
+
+.photo {
+  --size: clamp(133px, 37vw, 370px);
+  width: var(--size);
+  height: var(--size);
+  border-radius: clamp(20px, 4.9vw, 50px);
+}
+
+.text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 30px;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.greyText {
+  color: #a6a6a6;
+}
+/*# sourceMappingURL=TravelTime.module.css.map */

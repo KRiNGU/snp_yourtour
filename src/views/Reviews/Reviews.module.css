@@ -1,0 +1,15 @@
+.reviews {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: clamp(18px, 3vw, 30px);
+}
+
+@media screen and (max-width: 690px) {
+  .reviews {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=Reviews.module.css.map */

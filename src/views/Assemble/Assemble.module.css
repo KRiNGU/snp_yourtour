@@ -1,0 +1,124 @@
+.form {
+  background-color: #fff;
+  border-radius: clamp(30px, 4.4vw, 50px);
+  padding: clamp(60px, 4vw, 70px);
+  width: 100%;
+}
+
+.list {
+  list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.commentInput {
+  min-height: 132px;
+}
+
+.labels::before {
+  --size: clamp(16px, 2.2vw, 22px);
+  width: var(--size);
+  height: var(--size);
+  border: 2px solid #1b2f2b;
+}
+
+.checks {
+  margin-top: clamp(30px, 3.3vw, 33px);
+}
+
+.ageCheck {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 9px;
+}
+
+.radio:not(:first-child) {
+  margin-left: 33px;
+}
+
+.checkBoxLabel::before {
+  margin-right: clamp(11px, 1vw, 19px);
+}
+
+.greyText {
+  color: #a6a6a6;
+}
+
+.button {
+  border: none;
+  width: clamp(134px, 23vw, 235px);
+  height: clamp(47px, 6vw, 58px);
+}
+
+.findButton {
+  background-color: #286562;
+}
+
+.findButton:hover {
+  background-color: #3B7E7B;
+}
+
+.findButton:active {
+  background-color: #627F7E;
+}
+
+.findButton .buttonText {
+  color: #fff;
+}
+
+.resetButton {
+  margin-left: clamp(10px, 2.93vw, 30px);
+  background-color: #E0F0E5;
+}
+
+.resetButton:hover {
+  background-color: #F1F3F2;
+}
+
+.resetButton:active {
+  background-color: #D9DFDB;
+}
+
+.resetButton .buttonText {
+  color: #286562;
+}
+
+@media screen and (max-width: 1024px) {
+  .form {
+    padding: clamp(20px, 6vw, 60px);
+    padding-bottom: clamp(40px, 6vw, 60px);
+  }
+  .list {
+    gap: 33px 20px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .resetButton {
+    margin-left: 10px;
+  }
+  .list {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .form {
+    padding: 20px 20px 40px 20px;
+  }
+  .ageCheck {
+    margin-top: 9.5px;
+  }
+  .radio:not(:first-child) {
+    margin-left: 30px;
+  }
+  .checkBoxLabel::before {
+    margin-right: 10px;
+  }
+}
+/*# sourceMappingURL=Assemble.module.css.map */
