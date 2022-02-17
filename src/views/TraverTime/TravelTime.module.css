@@ -42,6 +42,9 @@
 }
 
 @media screen and (max-width: 690px) {
+  .title {
+    letter-spacing: 0.04em;
+  }
   .travelTime {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

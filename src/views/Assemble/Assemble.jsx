@@ -5,6 +5,7 @@ import Input from '../../components/Input/Input';
 import Radio from '../../components/Radio/Radio';
 import styles from './Assemble.module.css';
 import Button from '../../components/Button/Button';
+import DropDown from '../../components/DropDown/DropDown';
 
 const Assemble = () => (
   <section>
@@ -20,7 +21,7 @@ const Assemble = () => (
             labelText="Имя"
             placeholder="Введите Ваше имя"
           />
-          <Input
+          <DropDown
             fieldId="direction"
             labelText="Направление"
             placeholder="Куда хотите ехать"

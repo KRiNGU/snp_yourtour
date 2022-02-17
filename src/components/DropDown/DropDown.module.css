@@ -11,14 +11,25 @@
   width: 100%;
 }
 
-.input {
-  margin-top: 8px;
-  background-color: #f9f7f4;
-  border: 1px solid #f4f0e9;
-  line-height: clamp(43px, 7vw, 68px);
-  border-radius: 10px;
+.inputContainer {
+  position: relative;
+  height: clamp(43px, 7vw, 68px);
   padding: 0 20px;
+  margin-top: 8px;
+  border: 1px solid #f4f0e9;
+  background-color: #f9f7f4;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.input {
+  line-height: clamp(43px, 7vw, 68px);
+  cursor: pointer;
   font-size: clamp(16px, 2vw, 20px);
+  background: transparent;
+  border: none;
+  width: 100%;
+  padding-right: 50px;
 }
 
 .input::-webkit-input-placeholder {
@@ -41,9 +52,15 @@
   font-size: clamp(16px, 2vw, 20px);
 }
 
+.arrow {
+  position: absolute;
+  top: calc(50% - 5px);
+  right: 24px;
+}
+
 @media screen and (max-width: 690px) {
   .container {
     margin: 0 auto;
   }
 }
-/*# sourceMappingURL=Input.module.css.map */
+/*# sourceMappingURL=DropDown.module.css.map */

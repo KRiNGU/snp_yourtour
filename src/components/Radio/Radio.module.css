@@ -13,19 +13,10 @@
   border-color: #b3d7ff;
 }
 
-.input:focus + .label::before {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-}
-
-.input:focus:not(:checked) + .label::before {
-  border-color: #80bdff;
-}
-
 .input:checked + .label::before {
-  border-color: #0b76ef;
-  background-color: #0b76ef;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+  border-color: #1B1F2B;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23000'/%3e%3c/svg%3e");
 }
 
 .input:disabled + .label::before {
@@ -59,6 +50,6 @@
   margin-right: 0.5em;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 50% 50%;
+  background-size: 65% 65%;
 }
 /*# sourceMappingURL=Radio.module.css.map */

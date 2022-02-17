@@ -6,16 +6,16 @@ import styles from './Story.module.css';
 const Story = ({ title, bgImage, text, links = [], advantages = [] }) => (
   <div className={styles.container}>
     <h3 className={styles.title}>{title}</h3>
-    <p className={classNames('pnormal', styles.text)}>
-      {text}
-      {advantages.length !== 0 && (
-        <ul className={styles.advantages}>
-          {advantages.map((advantage) => (
-            <li className={styles.advantage}>{advantage.text}</li>
-          ))}
-        </ul>
-      )}
-    </p>
+    <p className={classNames('pnormal', styles.text)}>{text}</p>
+    {advantages.length !== 0 && (
+      <ul className={styles.advantages}>
+        {advantages.map((advantage, index) => (
+          <li key={index} className={classNames(styles.advantage, 'pnormal')}>
+            {advantage.text}
+          </li>
+        ))}
+      </ul>
+    )}
     <footer className={styles.footer}>
       <MoreButton classes={{ button: styles.button }} />
       <ul className={styles.links}>
