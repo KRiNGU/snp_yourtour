@@ -6,7 +6,7 @@
       -ms-flex-align: center;
           align-items: center;
   margin: clamp(75px, 14vw, 135px) auto;
-  max-width: 771px;
+  max-width: clamp(291px, 75vw, 764px);
 }
 
 .photo {
@@ -25,13 +25,31 @@
       -ms-flex-direction: column;
           flex-direction: column;
   margin-left: 30px;
+  margin-top: 30px;
 }
 
 .title {
   margin-bottom: 20px;
+  text-align: center;
+}
+
+.email {
+  text-align: center;
 }
 
 .greyText {
   color: #a6a6a6;
+}
+
+@media screen and (max-width: 690px) {
+  .travelTime {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .text {
+    margin-left: 0;
+  }
 }
 /*# sourceMappingURL=TravelTime.module.css.map */

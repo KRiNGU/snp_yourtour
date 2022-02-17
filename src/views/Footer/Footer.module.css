@@ -39,7 +39,7 @@
 }
 
 .logo:not(:first-child) {
-  margin-left: 25px;
+  margin-left: clamp(19px, 2.5vw, 25px);
 }
 
 .logoImage {

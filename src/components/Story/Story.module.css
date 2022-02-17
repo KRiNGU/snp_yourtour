@@ -26,8 +26,18 @@
 }
 
 .text {
+  margin-top: clamp(20px, 4vw, 37px);
   color: #fff;
   max-width: 554px;
+}
+
+.advantages {
+  margin-top: 20px;
+  padding-left: 30px;
+}
+
+.advantage {
+  color: #fff;
 }
 
 .button {
