@@ -50,6 +50,7 @@
 
 .logoText {
   margin-left: 10px;
+  border-bottom: 1px solid transparent;
 }
 
 @media screen and (max-width: 1024px) {

@@ -5,7 +5,7 @@ import Input from '../../components/Input/Input';
 import Radio from '../../components/Radio/Radio';
 import styles from './Assemble.module.css';
 import Button from '../../components/Button/Button';
-import DropDown from '../../components/DropDown/DropDown';
+import Dropdown from '../../components/Dropdown/Dropdown';
 
 const Assemble = () => (
   <section>
@@ -21,7 +21,7 @@ const Assemble = () => (
             labelText="Имя"
             placeholder="Введите Ваше имя"
           />
-          <DropDown
+          <Dropdown
             fieldId="direction"
             labelText="Направление"
             placeholder="Куда хотите ехать"
@@ -49,7 +49,9 @@ const Assemble = () => (
           <Input
             fieldId="comment"
             labelText="Комментарий"
-            classes={{ input: styles.commentInput }}
+            classes={{
+              input: styles.commentInput,
+            }}
           />
         </ul>
         <p className={classNames('pnormal', styles.checks)}>Вам есть 18 лет?</p>
@@ -85,7 +87,9 @@ const Assemble = () => (
               <span className={styles.greyText}>
                 {'Нажимая на кнопку, я принимаю условия '}
               </span>
-              Лицензионного договора
+              <a href="/#" className={styles.link}>
+                Лицензионного договора
+              </a>
             </span>
           }
         />

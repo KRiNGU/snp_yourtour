@@ -4,7 +4,12 @@ import MoreButton from '../MoreButton/MoreButton';
 import styles from './Story.module.css';
 
 const Story = ({ title, bgImage, text, links = [], advantages = [] }) => (
-  <div className={styles.container}>
+  <div
+    className={styles.container}
+    style={{
+      backgroundImage: `linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url(${bgImage})`,
+    }}
+  >
     <h3 className={styles.title}>{title}</h3>
     <p className={classNames('pnormal', styles.text)}>{text}</p>
     {advantages.length !== 0 && (
@@ -18,15 +23,19 @@ const Story = ({ title, bgImage, text, links = [], advantages = [] }) => (
     )}
     <footer className={styles.footer}>
       <MoreButton classes={{ button: styles.button }} />
-      <ul className={styles.links}>
+      <div className={styles.links}>
         {links.map((link, index) => (
-          <li key={index} className={classNames(styles.link, 'pnormal')}>
+          <a
+            key={index}
+            href="/#"
+            className={classNames(styles.link, 'pnormal')}
+          >
             {link.name}
-          </li>
+          </a>
         ))}
-      </ul>
+      </div>
     </footer>
-    <img src={bgImage} alt="Бэкграунд истории" className={styles.bgImage} />
+    {/* <img src={bgImage} alt="Бэкграунд истории" className={styles.bgImage} /> */}
   </div>
 );
 

@@ -15,7 +15,9 @@ const Footer = () => (
             alt="Ссылка на инстаграм"
             className={styles.logoImage}
           />
-          <div className={styles.logoText}>instagram</div>
+          <a href="/#" className={styles.logoText}>
+            instagram
+          </a>
         </div>
         <div className={styles.logo}>
           <img
@@ -23,7 +25,9 @@ const Footer = () => (
             alt="Ссылка на ВКонтакте"
             className={styles.logoImage}
           />
-          <div className={styles.logoText}>vkontakte</div>
+          <a href="/#" className={styles.logoText}>
+            vkontakte
+          </a>
         </div>
         <div className={styles.logo}>
           <img
@@ -31,7 +35,9 @@ const Footer = () => (
             alt="Ссылка на фейсбук"
             className={styles.logoImage}
           />
-          <div className={styles.logoText}>facebook</div>
+          <a href="/#" className={styles.logoText}>
+            facebook
+          </a>
         </div>
       </div>
     </div>

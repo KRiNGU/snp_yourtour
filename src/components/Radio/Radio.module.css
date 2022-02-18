@@ -4,23 +4,10 @@
   opacity: 0;
 }
 
-.input:not(:disabled):not(:checked) + .label:hover::before {
-  border-color: #b3d7ff;
-}
-
-.input:not(:disabled):active + .label::before {
-  background-color: #b3d7ff;
-  border-color: #b3d7ff;
-}
-
 .input:checked + .label::before {
   border-color: #1B1F2B;
   background-color: transparent;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23000'/%3e%3c/svg%3e");
-}
-
-.input:disabled + .label::before {
-  background-color: #e9ecef;
 }
 
 .label {
@@ -34,6 +21,7 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  cursor: pointer;
 }
 
 .label::before {

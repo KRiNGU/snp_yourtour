@@ -9,6 +9,7 @@
   max-width: 500px;
   min-width: 278px;
   width: 100%;
+  cursor: pointer;
 }
 
 .input {
@@ -39,6 +40,17 @@
 .input::placeholder {
   font-weight: 400;
   font-size: clamp(16px, 2vw, 20px);
+}
+
+@media (hover: hover) {
+  .input:hover {
+    background-color: #f4f0e9;
+    cursor: pointer;
+  }
+  .input:focus {
+    background-color: #f4f0e9;
+    border-color: #a6a6a6;
+  }
 }
 
 @media screen and (max-width: 690px) {

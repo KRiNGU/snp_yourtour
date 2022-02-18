@@ -28,17 +28,9 @@ header {
 
 .button {
   margin: clamp(40px, 11vw, 50px) auto 0 auto;
-  width: 118px;
   border: none;
+  padding: 5px 20px;
   background-color: #fff;
-}
-
-.button:hover {
-  background-color: #EFA501;
-}
-
-.button:active {
-  background-color: #F8E6BE;
 }
 
 @media screen and (max-width: 1024px) {
@@ -50,8 +42,16 @@ header {
 
 @media screen and (max-width: 360px) {
   .button {
-    width: 114px;
     height: 33px;
+  }
+}
+
+@media (hover: hover) {
+  .button:hover {
+    background-color: #EFA501;
+  }
+  .button:active {
+    background-color: #F8E6BE;
   }
 }
 /*# sourceMappingURL=Header.module.css.map */

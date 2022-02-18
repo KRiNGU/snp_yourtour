@@ -50,20 +50,12 @@
 
 .button {
   border: none;
-  width: clamp(134px, 23vw, 235px);
+  padding: 0 clamp(30px, 7vw, 71px);
   height: clamp(47px, 6vw, 58px);
 }
 
 .findButton {
   background-color: #286562;
-}
-
-.findButton:hover {
-  background-color: #3B7E7B;
-}
-
-.findButton:active {
-  background-color: #627F7E;
 }
 
 .findButton .buttonText {
@@ -73,14 +65,6 @@
 .resetButton {
   margin-left: clamp(10px, 2.93vw, 30px);
   background-color: #E0F0E5;
-}
-
-.resetButton:hover {
-  background-color: #F1F3F2;
-}
-
-.resetButton:active {
-  background-color: #D9DFDB;
 }
 
 .resetButton .buttonText {
@@ -119,6 +103,24 @@
   }
   .checkBoxLabel::before {
     margin-right: 10px;
+  }
+}
+
+@media (hover: hover) {
+  .link:active {
+    color: #286562;
+  }
+  .findButton:hover {
+    background-color: #3B7E7B;
+  }
+  .findButton:active {
+    background-color: #627F7E;
+  }
+  .resetButton:hover {
+    background-color: #F1F3F2;
+  }
+  .resetButton:active {
+    background-color: #D9DFDB;
   }
 }
 /*# sourceMappingURL=Assemble.module.css.map */

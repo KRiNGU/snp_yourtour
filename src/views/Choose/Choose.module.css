@@ -22,7 +22,7 @@
   margin-left: clamp(10px, 3vw, 30px);
 }
 
-.type:hover {
+.picked {
   color: #EFA501;
   border-bottom-color: #EFA501;
 }
@@ -59,6 +59,12 @@
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+  }
+}
+
+@media (hover: hover) {
+  .type:hover {
+    border-bottom-color: inherit;
   }
 }
 /*# sourceMappingURL=Choose.module.css.map */

@@ -7,10 +7,18 @@ const NavigationPannel = () => (
   <div className={styles.pannel}>
     <img src={logo} alt="Логотип" className={styles.logo} />
     <nav>
-      <p className={classNames('pnormal', styles.element)}>Туры</p>
-      <p className={classNames('pnormal', styles.element)}>Создать тур</p>
-      <p className={classNames('pnormal', styles.element)}>Отзывы</p>
-      <p className={classNames('pnormal', styles.element)}>Истории</p>
+      <a href="/#" className={classNames('pnormal', styles.element)}>
+        Туры
+      </a>
+      <a href="/#" className={classNames('pnormal', styles.element)}>
+        Создать тур
+      </a>
+      <a href="/#" className={classNames('pnormal', styles.element)}>
+        Отзывы
+      </a>
+      <a href="/#" className={classNames('pnormal', styles.element)}>
+        Истории
+      </a>
     </nav>
     <p className={classNames('pnormal', styles.phone)}>+7 999 999 99 99</p>
   </div>

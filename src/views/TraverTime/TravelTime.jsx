@@ -16,7 +16,9 @@ const TravelTime = () => (
         <span className={styles.greyText}>
           Напиши на почту и узнай подробности на{' '}
         </span>
-        yourtour@gmail.com
+        <a href="/#" className={styles.link}>
+          yourtour@gmail.com
+        </a>
       </p>
     </div>
   </div>

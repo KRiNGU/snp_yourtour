@@ -55,4 +55,10 @@
     margin-left: 0;
   }
 }
+
+@media (hover: hover) {
+  .link:active {
+    color: #286562;
+  }
+}
 /*# sourceMappingURL=TravelTime.module.css.map */

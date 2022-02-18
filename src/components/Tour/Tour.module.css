@@ -6,21 +6,22 @@
   padding: 50px;
   cursor: pointer;
   overflow: hidden;
-  -webkit-transition: all .3s ease, z-index 1s;
-  transition: all .3s ease, z-index 1s;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), color-stop(48.44%, rgba(0, 0, 0, 0.06)), to(rgba(0, 0, 0, 0.5)));
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  background-position: center;
+  background-size: cover;
 }
 
-.container:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  z-index: 1;
-  padding: 40px;
-}
-
-.container:hover .button {
-  background-color: #286562;
+@media (hover: hover) {
+  .container:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    z-index: 1;
+    padding: 40px;
+  }
+  .container:hover .button {
+    background-color: #286562;
+  }
 }
 
 .name {
@@ -38,24 +39,11 @@
   left: 30px;
 }
 
-.backgroundImage {
-  position: absolute;
-  margin: 0 auto;
-  bottom: 0;
-  left: calc(50% - 185px);
-  text-align: center;
-  z-index: -1;
-}
-
 @media screen and (max-width: 1280px) {
   .container {
     width: clamp(318px, 46vw, 450px);
     height: clamp(318px, 52vw, 531px);
     margin: 0 auto;
-  }
-  .backgroundImage {
-    width: 450px;
-    left: calc(50% - 225px);
   }
 }
 

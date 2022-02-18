@@ -10,6 +10,17 @@ code {
     monospace;
 }
 
+a {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+@media (hover: hover) {
+  a:hover {
+    border-bottom-color: inherit;
+  }
+}
+
 h1 {
   font-weight: 700;
   font-size: clamp(34px, 9.4vw, 96px);
@@ -59,6 +70,7 @@ h3 {
   padding: 0;
   outline: none;
   color: #1b2f2b;
+  transition: all 0.3s ease;
 }
 
 section {

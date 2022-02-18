@@ -4,63 +4,49 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   max-width: 500px;
   min-width: 278px;
   width: 100%;
 }
 
-.inputContainer {
+.selectContainer {
   position: relative;
+  width: 100%;
   height: clamp(43px, 7vw, 68px);
+}
+
+.select {
+  width: 100%;
+  height: clamp(43px, 7vw, 68px);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   padding: 0 20px;
   margin-top: 8px;
   border: 1px solid #f4f0e9;
   background-color: #f9f7f4;
   cursor: pointer;
   border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: inherit;
+  background-position: calc(100% - 24px) center;
 }
 
-.input {
-  line-height: clamp(43px, 7vw, 68px);
-  cursor: pointer;
-  font-size: clamp(16px, 2vw, 20px);
-  background: transparent;
-  border: none;
-  width: 100%;
-  padding-right: 50px;
-}
-
-.input::-webkit-input-placeholder {
-  font-weight: 400;
-  font-size: clamp(16px, 2vw, 20px);
-}
-
-.input:-ms-input-placeholder {
-  font-weight: 400;
-  font-size: clamp(16px, 2vw, 20px);
-}
-
-.input::-ms-input-placeholder {
-  font-weight: 400;
-  font-size: clamp(16px, 2vw, 20px);
-}
-
-.input::placeholder {
-  font-weight: 400;
-  font-size: clamp(16px, 2vw, 20px);
-}
-
-.arrow {
-  position: absolute;
-  top: calc(50% - 5px);
-  right: 24px;
+.default {
+  color: #a6a6a6;
 }
 
 @media screen and (max-width: 690px) {
   .container {
     margin: 0 auto;
+  }
+}
+
+@media (hover: hover) {
+  .select:hover {
+    background-color: #f4f0e9;
   }
 }
 /*# sourceMappingURL=DropDown.module.css.map */
