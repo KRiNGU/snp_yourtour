@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/snp_yourtour/static/css/main.e9ce6d3c.css",
+    "main.css": "/snp_yourtour/static/css/main.d1342ceb.css",
     "main.js": "/snp_yourtour/static/js/main.c4915d3d.js",
     "static/js/787.ea7e79e6.chunk.js": "/snp_yourtour/static/js/787.ea7e79e6.chunk.js",
     "static/media/header-img.jpg": "/snp_yourtour/static/media/header-img.5cf55d13befd40b49a8b.jpg",
@@ -59,12 +59,12 @@
     "static/media/vector.svg": "/snp_yourtour/static/media/vector.71b9c43331bf83ddac103a4bd56abd99.svg",
     "static/media/facebook.svg": "/snp_yourtour/static/media/facebook.0eaaad3a0b75d0a151971a7bb610cdcf.svg",
     "static/media/arrow.svg": "/snp_yourtour/static/media/arrow.242e63eec0cffa8c13eec0625fc750ce.svg",
-    "main.e9ce6d3c.css.map": "/snp_yourtour/static/css/main.e9ce6d3c.css.map",
+    "main.d1342ceb.css.map": "/snp_yourtour/static/css/main.d1342ceb.css.map",
     "main.c4915d3d.js.map": "/snp_yourtour/static/js/main.c4915d3d.js.map",
     "787.ea7e79e6.chunk.js.map": "/snp_yourtour/static/js/787.ea7e79e6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9ce6d3c.css",
+    "static/css/main.d1342ceb.css",
     "static/js/main.c4915d3d.js"
   ]
 }
