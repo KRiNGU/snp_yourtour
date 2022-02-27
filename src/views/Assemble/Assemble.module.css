@@ -52,6 +52,8 @@
   border: none;
   padding: 0 clamp(30px, 7vw, 71px);
   height: clamp(47px, 6vw, 58px);
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
 }
 
 .findButton {
@@ -106,7 +108,7 @@
   }
 }
 
-@media (hover: hover) {
+@media screen and (min-width: 690px) {
   .link:active {
     color: #286562;
   }

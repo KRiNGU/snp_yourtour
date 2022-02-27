@@ -56,7 +56,7 @@
   }
 }
 
-@media (hover: hover) {
+@media screen and (min-width: 690px) {
   .link:active {
     color: #286562;
   }

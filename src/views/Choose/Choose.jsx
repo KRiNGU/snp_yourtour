@@ -40,37 +40,37 @@ const Choose = () => {
         <Tour
           name="Путешествие в горы"
           cost="от 80 000 руб"
-          bgImage={tourCar}
+          image={tourCar}
           classes={{ container: styles.tour }}
         />
         <Tour
           name="Путешествие в горы"
           cost="от 80 000 руб"
-          bgImage={girlInSand}
+          image={girlInSand}
           classes={{ container: styles.tour }}
         />
         <Tour
           name="Путешествие в горы"
           cost="от 80 000 руб"
-          bgImage={mountain}
+          image={mountain}
           classes={{ container: styles.tour }}
         />
         <Tour
           name="Путешествие в горы"
           cost="от 80 000 руб"
-          bgImage={street}
+          image={street}
           classes={{ container: styles.tour }}
         />
         <Tour
           name="Путешествие в горы"
           cost="от 80 000 руб"
-          bgImage={beach}
+          image={beach}
           classes={{ container: styles.tour }}
         />
         <Tour
           name="Путешествие в горы"
           cost="от 80 000 руб"
-          bgImage={manOnTheBridge}
+          image={manOnTheBridge}
           classes={{ container: styles.tour }}
         />
       </article>

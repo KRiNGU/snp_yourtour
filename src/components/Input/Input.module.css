@@ -20,6 +20,8 @@
   border-radius: 10px;
   padding: 0 20px;
   font-size: clamp(16px, 2vw, 20px);
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
 }
 
 .input::-webkit-input-placeholder {
@@ -42,7 +44,7 @@
   font-size: clamp(16px, 2vw, 20px);
 }
 
-@media (hover: hover) {
+@media screen and (min-width: 690px) {
   .input:hover {
     background-color: #f4f0e9;
     cursor: pointer;

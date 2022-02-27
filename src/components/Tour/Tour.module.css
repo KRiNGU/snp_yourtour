@@ -2,22 +2,36 @@
   height: 531px;
   width: 370px;
   position: relative;
-  border-radius: 45px;
   padding: 50px;
   cursor: pointer;
   overflow: hidden;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-  background-position: center;
-  background-size: cover;
+  border-radius: 45px;
+  -webkit-transition: padding 0.3s;
+  transition: padding 0.3s;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), color-stop(48.44%, rgba(0, 0, 0, 0.06)), to(rgba(0, 0, 0, 0.5)));
+  background: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
 }
 
-@media (hover: hover) {
+.image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  -webkit-transition: scale 0.3s, -webkit-transform 0.3s;
+  transition: scale 0.3s, -webkit-transform 0.3s;
+  transition: transform 0.3s, scale 0.3s;
+  transition: transform 0.3s, scale 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 690px) {
   .container:hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-    z-index: 1;
     padding: 40px;
+  }
+  .container:hover .image {
+    -webkit-transform: scale(1.2) translate(-40%, -40%);
+            transform: scale(1.2) translate(-40%, -40%);
   }
   .container:hover .button {
     background-color: #286562;

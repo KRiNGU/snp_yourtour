@@ -5,16 +5,31 @@
   overflow: hidden;
   border-radius: clamp(20px, 4.9vw, 50px);
   padding: clamp(30px, 5.9vw, 60px);
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-  background-position: center;
-  background-size: cover;
+  background: -webkit-gradient(linear, right top, left top, color-stop(0.01%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.2)));
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%);
 }
 
-@media (hover: hover) {
+.image {
+  position: absolute;
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
+  transition: transform .3s ease;
+  transition: transform .3s ease, -webkit-transform .3s ease;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: clamp(455px, 55.4vw, 567px);
+}
+
+@media screen and (min-width: 690px) {
   .container:hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    cursor: pointer;
+  }
+  .container:hover .image {
+    -webkit-transform: scale(1.2) translate(-40%, -40%);
+            transform: scale(1.2) translate(-40%, -40%);
   }
   .container:hover .button {
     background-color: #286562;
@@ -70,7 +85,7 @@
   }
 }
 
-@media (hover: hover) {
+@media screen and (min-width: 690px) {
   .link:active {
     color: #EFA501;
   }

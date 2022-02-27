@@ -30,10 +30,8 @@ nav {
   color: #fff;
   cursor: pointer;
   border-bottom: 1px solid transparent;
-}
-
-.element:hover {
-  border-bottom-color: #fff;
+  -webkit-transition: border-bottom-color 0.3s;
+  transition: border-bottom-color 0.3s;
 }
 
 .phone {
@@ -75,6 +73,12 @@ nav {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 690px) {
+  .element:hover {
+    border-bottom-color: #fff;
   }
 }
 /*# sourceMappingURL=NavigationPannel.module.css.map */

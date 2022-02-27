@@ -4,8 +4,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 500px;
   min-width: 278px;
   width: 100%;
@@ -21,8 +21,8 @@
   width: 100%;
   height: clamp(43px, 7vw, 68px);
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   padding: 0 20px;
   margin-top: 8px;
   border: 1px solid #f4f0e9;
@@ -32,6 +32,8 @@
   background-repeat: no-repeat;
   background-size: inherit;
   background-position: calc(100% - 24px) center;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
 }
 
 .default {
@@ -44,7 +46,7 @@
   }
 }
 
-@media (hover: hover) {
+@media screen and (min-width: 690px) {
   .select:hover {
     background-color: #f4f0e9;
   }
